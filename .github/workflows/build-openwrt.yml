@@ -87,8 +87,8 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P2_SH
 
     - name: SSH connection to Actions
-      uses: csexton/debugger-action@master
-      if: env.SSH_ACTIONS == 'true' || contains(github.event.action, 'ssh')
+      uses: P3TERX/ssh2actions@v1.0.0
+     # if: env.SSH_ACTIONS == 'true' || contains(github.event.action, 'ssh')
 
     - name: Download package
       id: package
